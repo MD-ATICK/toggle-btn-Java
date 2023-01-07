@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #363636;
+}
+.content{
+    height: 85px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    position: relative;
+}
+.span-toggle{
+    height: 75px;
+    width: 75px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.3rem;
+    margin: 0 0.6rem;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.active .span-toggle{
+    transform: translateX(125px);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
